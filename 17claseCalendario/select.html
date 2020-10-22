@@ -8,12 +8,28 @@
   <body>
     <h1>Etiqueta Select</h1>
     <main>
-      <select name="cursos" id="">
+      <!--       <select name="cursos" id="">
         <option value="JavaScript">JavaScript</option>
         <option value="HTML5">HTML5</option>
         <option value="CSS3">CSS3</option>
         <option value="Web Standards">Web Standards</option>
-      </select>
+      </select> -->
+
+      <!-- Uso óptimo de generar una lista select -->
+      <form method="GET">
+        <label for="cursos">
+          <span>Selecciona el curso: </span>
+          <input list="cursos" name="curso"
+        /></label>
+        <datalist id="cursos">
+          <option value="JavaScript"></option>
+          <option value="HTML5"></option>
+          <option value="CSS3"></option>
+          <option value="Web Standards"></option>
+        </datalist>
+
+        <input type="submit" value="Iniciar curso" />
+      </form>
     </main>
   </body>
 </html>
