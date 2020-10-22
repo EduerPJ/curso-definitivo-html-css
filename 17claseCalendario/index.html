@@ -6,37 +6,55 @@
     <title>Calendario</title>
   </head>
   <body>
-    <h1>Calendario</h1>
-    <!--     <form action="">
-      <label for="hora">
-        <span>Hora</span>
-        <input type="time" name="hora" id="hora" />
-      </label>
-
-      <label for="dia">
-        <span>Día</span>
-        <input type="date" name="dia" id="dia" />
-      </label>
-
-      <label for="semana">
-        <span>Semana</span>
-        <input type="week" name="semana" id="semana" />
-      </label>
-
-      <label for="mes">
-        <span>Mes</span>
-        <input type="month" name="mes" id="mes" />
-      </label>
-
-      <input type="submit" />
-    </form> -->
     <form action="">
-      <label for="calendario">
-        <span>Calendario</span>
-        <input type="datetime-local" id="calendario" name="calendario" />
+      <label for="nombre">
+        <span>¿Cuál es tu nombre?</span>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          required
+          placeholder="Tu nombre"
+          autocomplete="name"
+        />
       </label>
 
-      <input type="submit" value="Enviar Fecha" />
+      <label for="correo">
+        <span>¿Cuál es tu correo'</span>
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          required
+          placeholder="micorreo@gmail.com"
+          autocomplete="email"
+        />
+      </label>
+
+      <label for="pais">
+        <span>¿En qué país vives?</span>
+        <input
+          type="text"
+          name="pais"
+          id="pais"
+          required
+          placeholder="Isla Misteriosa"
+          autocomplete="country"
+        />
+      </label>
+
+      <label for="cp">
+        <span>¿Cuál es tu código postal?</span>
+        <input
+          type="number"
+          name="cp"
+          id="cp"
+          placeholder="680000"
+          autocomplete="postal-code"
+        />
+      </label>
+
+      <input type="submit" value="Enviar" />
     </form>
   </body>
 </html>
