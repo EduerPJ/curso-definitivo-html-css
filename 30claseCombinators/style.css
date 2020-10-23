@@ -1,0 +1,7 @@
+/* Hermano adyacente o cercano */
+/* Aplica el style al elementoB que esté cerca al elementoA */
+
+/* Adjacent sibling */
+h2 + p {
+  color: mediumvioletred;
+}
