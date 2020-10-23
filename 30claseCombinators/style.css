@@ -8,6 +8,49 @@
 
 /* hermano general General Sibling */
 
-h2 ~ p {
+/* h2 ~ p {
   color: red;
+}
+ */
+
+/* Combinators Child */
+/* El padre tad que sea mayor tag */
+/* La etiqueta que sea hija directa  */
+div > p {
+  color: orangered;
+}
+
+/* Descendiente */
+/* Todas las etiquetas que esten dentro */
+div p {
+  color: orchid;
+}
+
+/* First Child */
+.p:first-child {
+  color: powderblue;
+}
+/*  Last Child  */
+ul li:last-child {
+  color: royalblue;
+}
+
+/* Nth Last Child Selector */
+ul li:nth-last-child(3) {
+  color: rgb(226, 25, 25);
+}
+
+/* First of Type Selector */
+
+ul li:first-of-type {
+  color: chartreuse;
+}
+
+/* Nth of Type Selector
+:nth-of-type(A)  even - odd*/
+
+article p:nth-of-type(odd) {
+  font-family: monospace;
+  font-size: 60px;
+  color: aqua;
 }
