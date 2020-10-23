@@ -2,6 +2,12 @@
 /* Aplica el style al elementoB que esté cerca al elementoA */
 
 /* Adjacent sibling */
-h2 + p {
+/* h2 + p {
   color: mediumvioletred;
+} */
+
+/* hermano general General Sibling */
+
+h2 ~ p {
+  color: red;
 }
